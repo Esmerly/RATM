@@ -1,0 +1,379 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+:root{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+
+ 
+/*Inicio (Politécnico Prof. Ramona Altagracia Tejada Marte) */
+
+
+.header{
+    height: 70vh;
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.486) 0%, hsla(218, 100%, 47%, 0.514) 100%), url(imagen-css/DSC_0047.JPG);
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+} 
+.head{
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+
+/* ventana emergente*/
+
+
+.window-notice {
+    background: rgba(33, 41, 52, .85);
+    bottom: 0;
+    display: flex;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 999;
+   
+}
+.window-notice .content {
+    background-image: url(img/images.jpg);
+    border-radius: 2px;
+    box-shadow: 0 1px 3px  #1e90ff;
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 700px;
+  
+    overflow: hidden;
+    position: relative;
+    width: 80%;
+    padding: 2rem;
+    font-size: 1.3rem;
+}
+
+.content-buttons {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.content-buttons a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 1.5em;
+    background-color:  transparent;
+    color:  #1e90ff;
+    text-transform: uppercase;
+    width: 160px;
+    height: 20px;
+}
+
+.content-textt{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 30px; 
+}
+ 
+
+.educarventanaemergente{
+    color: rgb(252, 239, 239);
+    font-size: 25px;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 30px; 
+}
+
+.bienvenidoven{
+    color: rgb(253, 244, 244);
+    font-size: 0.9em;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 30px; 
+}
+
+
+/* Titulo pricipal*/
+
+
+.tituloprincipal{
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.Educaresredimir{
+    font-weight: 300;
+    font-size: 25px;
+    color: black;
+}
+
+
+/* MVVP */
+
+
+.subtitulo{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.contenedor-servicio{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenedor-servicio img{
+    width: 40%;
+}
+
+.checklist-servicio{
+    width: 45%;
+}
+
+.service{
+    margin-bottom: 20px;
+}
+
+.n-service{
+    margin-bottom: 7px;
+    color: #1e90ff;
+}
+
+.number{
+    display: inline-block;
+    /* 02 */
+    background: silver;
+    background-image: linear-gradient(to top,  0%,  100%);
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    font-weight: 700;
+}
+
+
+/* Cursos y areas*/
+
+
+.gradosyareas{
+    color: #000000;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 50px; 
+    
+}
+
+
+
+
+/* Nuestro plantel (galeria de fotos)*/
+
+
+.gallery{
+    background: #f2f2f2;
+    
+}
+
+.contenedor-galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    
+}
+
+.img-galeria{
+    width: 30%;
+    display: block;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .6);
+    cursor: pointer;
+    border: rgb(0, 0, 0) 2px solid;
+ 
+}
+
+
+
+.imagen-light{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.534);
+    transform: translate(100%);
+    transition: transform .2s ease-in-out;
+}
+
+.agregar-imagen{
+    width: 60%;
+    transform: scale(0);
+    border-radius: 10px;
+    transition: transform .3s .2s;
+}
+
+.showImage{
+    transform: scale(1);
+}
+
+.show{
+    transform: translate(0);
+}
+
+.close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.experts{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cont-expert{
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cont-expert img{
+    display: block;
+    margin: auto;
+    width: 90%;
+    height: 90%;
+}
+
+.n-expert{
+    width: 100%;
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+footer{
+    background: #53606d;
+    padding-bottom: 0.1px;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+
+/* Ingresado en el año escolar 2022-2023*/
+
+
+.tituloimagen-fondo {
+    color:#000000;;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 30px; 
+}
+
+.imagen-fondo{
+    background-image: url(imagen-css/estudiantes.avif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 10em;
+    background-position: center;
+}
+ 
+.imagen-fondo{
+    color: #1e90ff;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+
+.parrafo-estudiante{
+    color: black;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+
+/* Cómo llegar */
+
+
+.cmllegar{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 30px; 
+}
+.dirrecion{
+   
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+
+.mapa{
+    margin-top: 25px;
+    margin-bottom: 100px;
+}
+
+
+
+/*media screen*/
+
+
