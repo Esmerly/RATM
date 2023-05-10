@@ -1,0 +1,134 @@
+
+
+.logo {
+    height: 50px;
+    padding: 2px;
+    
+}
+
+.enlace {
+    position: absolute;
+    padding: 20px 50px;
+}
+header {
+    background: rgba(240, 240, 240, 0.7);
+    width: 100%;
+  
+    
+  }
+  
+  nav {
+    float: right;
+  }
+  
+ 
+  
+  nav ul {
+    list-style: none;
+    overflow: hidden;
+    margin-right: 20px; 
+  }
+  
+  nav ul li {
+
+    float: right;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  nav ul li a {
+    display: inline-block;
+    padding: 10px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  nav ul li:hover {
+    background: #000000a9;
+  }
+
+
+  /* Pie de pagina */
+
+  .contenedor{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+} 
+
+.contact-us{
+  width: 40%;
+  color: rgba(255, 255, 255, 0.788);
+  
+}
+
+.brand{
+  font-weight: 500;
+  font-size: 40px;
+  color: silver;
+}
+
+.brand+p{
+  font-weight: 500;
+  
+}
+
+.social-media{
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  
+}
+
+.social-media-icon{
+  display: inline-block;
+  margin-left: 20px;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  
+}
+
+.social-media-icon i{
+  font-size: 30px;
+  line-height: 60px;
+}
+
+.line{
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  height: 2px;
+  background: #000000;
+  margin-bottom: 60px;
+}
+
+.social-media-icon:hover{
+  background: #1e90ff;
+  color:black;
+ 
+}
+
+footer{
+  background: #53606d;
+  padding-bottom: 0.1px;
+  
+}
+
+.footer-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+
+
+
+
